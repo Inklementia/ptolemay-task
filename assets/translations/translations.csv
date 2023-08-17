@@ -1,0 +1,51 @@
+key,uz,ru,en
+appName,Didox,Didox,Didox
+checkForUpdates,Янгиланиш текшируви...,Проверка обновления...,Yangilanish tekshiruvi...
+checkForSettings,Дастурни янгиланг,Авторизация...,Avtorizatsiya...
+updateApp,,Обновите приложение,Dasturni yangilang
+updateAppDesc,"Дастурнинг бу версияси энди қўлланилмайди. Илтимос, ишни давом эттириш учун, дастурни янгиланг","Данная версия приложения более не поддерживается. Пожалуйста, обновитесь для того, что бы продолжить работу","Dasturning bu versiyasi endi qo‘llanilmaydi. Iltimos,ishni davom ettirish uchun, dasturni yangilang"
+update,Янгилаш,Обновить,Yangilash
+updating,Янгиланиш,Обновление,Yangilanish
+updateAppDesc2,"Дастурнинг янги версияси мавжуд. Дастурни янада барқарор ишлаши ва янги функциялардан фойдалана олиш учун, янгиланинг","Доступна новая версия приложения. Обновитесь, для более стабильной работы приложения и получения доступа к новым функциям","Dasturning yangi versiyasi mavjud. Dasturni yanada barqaror ishlashi va yangi funksiyalardan foydalana olish uchun, yangilaning"
+remindLater,Кейинроқ эслатиш,Напомнить позже,Keyinroq eslatish
+updateInfoTitle,"Didox мобил иловасида 
+янгиликлар","Новое в мобильном приложении 
+Didox","Didox mobil ilovasida
+yangiliklar"
+chooseAction,,Выберите действие,
+close,Ëпиш,Закрыть,Yopish
+accept,Принять,Принять,Принять
+edit,Редактировать,Редактировать,Редактировать
+change,Изменить,Изменить,Изменить
+copy,Копировать,Копировать,Копировать
+share,Поделиться,Поделиться,Поделиться
+delete,Удалить,Удалить,Удалить
+checkStatus,Проверить статус в ГНК,Проверить статус в ГНК,Проверить статус в ГНК
+save,Сохранить,Сохранить,Сохранить
+send,Отправить,Отправить,Отправить
+confirm,Подтвердить,Подтвердить,Подтвердить
+next,Далее,Далее,Далее
+cancel,Отмена,Отмена,Отмена
+create,Создать,Создать,Создать
+search,Поиск,Поиск,Поиск
+more,Больше,Больше,Больше
+hide,Скрыть,Скрыть,Скрыть
+cont,Продолжить,Продолжить,Продолжить
+home,Главная,Главная,Главная
+docs,Хужжатлар,Документы,Xujjatlar
+trade,,Торговля,
+finances,,Финансы,
+profile,Профил,Профиль,Profil
+notifications,Хабарлар,Уведомления,Xabarlar
+purchases,Харидалар,Закупки,Xaridlar
+sales,Сотувлар,Продажи,Sotuvlar
+diBank,DiBank,DiBank,DiBank
+diPay,DiPay,DiPay,DiPay
+corpCardsMonitoring,,Мониторинг корп.карт,
+terminalsMonitoring,,Мониторинг терминалов,
+supportDesc,,Есть вопросы? Обратитесь по данному номеру в службку поддержки,
+sumCurrency,сўм,сум,so‘m
+changeCompany,Смена организации,Смена организации,Смена организации
+fizPerson,физ. лицо,физ. лицо,физ. лицо
+addCompany,Добавить организацию,Добавить организацию,Добавить организацию
+addDidoxOperatorDesc,"Добавьте Didox как оператора, чтобы обновить документы","Добавьте Didox как оператора, чтобы обновить документы","Добавьте Didox как оператора, чтобы обновить документы"
