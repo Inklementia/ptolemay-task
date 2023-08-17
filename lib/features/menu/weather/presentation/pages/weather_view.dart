@@ -12,12 +12,15 @@ class WeatherView extends StatefulWidget {
   State<WeatherView> createState() => _WeatherViewState();
 }
 
-class _WeatherViewState extends State<WeatherView> {
+class _WeatherViewState extends State<WeatherView> with WidgetsBindingObserver {
   //
+  late bool? isGranted = false;
   void updateState() => {if (mounted) setState(() {})};
 
+//
   @override
   void initState() {
+    WidgetsBinding.instance.addObserver(this);
     addPostFrameCallback(() async {
       checkForLocationPermissions();
     });
@@ -26,24 +29,38 @@ class _WeatherViewState extends State<WeatherView> {
   }
 
   Future<void> checkForLocationPermissions() async {
-    final isGranted =
-        MyPermissionHelper.permissions[Permission.locationWhenInUse]!;
+    isGranted = await MyPermissionHelper.check(Permission.locationWhenInUse);
 
-    if (!isGranted) {
+    if (isGranted != null && isGranted!) {
+      updateState();
+    } else {
       requestPermission();
     }
   }
 
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) checkForLocationPermissions();
+  }
+
   void requestPermission() async {
     await sl<NavigatorService>().showMyModalBottomSheet(
+      context: context,
       sheet: PermissionSheet.location(),
     );
-    updateState();
+
+    checkForLocationPermissions();
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    return MyPermissionHelper.permissions[Permission.locationWhenInUse]!
+    return isGranted != null && isGranted!
         ? WeatherContent()
         : WeatherNoPermissionState(onRetry: requestPermission);
   }

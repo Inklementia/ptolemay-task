@@ -76,11 +76,12 @@ class NavigatorService {
   }
 
   Future showMyModalBottomSheet({
+    required BuildContext context,
     required Widget sheet,
     bool isScrollable = false,
   }) {
     return showModalBottomSheet(
-      context: router.navigatorKey.currentContext!,
+      context: context,
       builder: (_) => sheet,
       isScrollControlled: true,
       clipBehavior: Clip.antiAlias, // default is Clip.none
